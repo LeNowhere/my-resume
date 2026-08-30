@@ -103,7 +103,7 @@ export default function AnimatedContent({
                   <h3 className="text-sm font-bold text-white mt-0.5 group-hover:text-indigo-300 transition-colors">PT. Super Andalas Steel</h3>
                 </div>
                 <span className="text-[11px] font-mono text-slate-400 bg-slate-800/80 px-2 py-0.5 rounded shrink-0">
-                  2022 - Present
+                  2026 - Present
                 </span>
               </div>
               <ul className="text-xs text-slate-300 space-y-1.5 list-disc list-inside leading-relaxed">
@@ -126,7 +126,7 @@ export default function AnimatedContent({
                   <h3 className="text-sm font-bold text-white mt-0.5 group-hover:text-indigo-300 transition-colors">RCTI+</h3>
                 </div>
                 <span className="text-[11px] font-mono text-slate-400 bg-slate-800/80 px-2 py-0.5 rounded shrink-0">
-                  2021 - 2022
+                  2025 - 2026
                 </span>
               </div>
               <ul className="text-xs text-slate-300 space-y-1.5 list-disc list-inside leading-relaxed">
@@ -149,7 +149,7 @@ export default function AnimatedContent({
                   <h3 className="text-sm font-bold text-white mt-0.5 group-hover:text-indigo-300 transition-colors">DANA Indonesia</h3>
                 </div>
                 <span className="text-[11px] font-mono text-slate-400 bg-slate-800/80 px-2 py-0.5 rounded shrink-0">
-                  2019 - 2021
+                  2019 - 2025
                 </span>
               </div>
               <ul className="text-xs text-slate-300 space-y-1.5 list-disc list-inside leading-relaxed">
