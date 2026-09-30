@@ -13,17 +13,23 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Joshua Sitanggang's Website",
-  description: "Welcome to my humble space",
+  title: "Joshua Sitanggang | Fullstack Developer",
+  description: "High-performing Fullstack Developer portfolio and CV preview",
 };
 
-export default function RootLayout({ children }: LayoutProps<"/">) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased scroll-smooth`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col bg-[#111319] text-slate-200">
+        {children}
+      </body>
     </html>
   );
 }
