@@ -52,7 +52,7 @@ export default function Home() {
               EXPERIENCE
             </a>
             <a 
-              href="/CV - Joshua Surya Ananta Sitanggang.pdf" 
+              href="/cv-joshua.pdf" 
               download 
               className="bg-indigo-600 hover:bg-indigo-500 text-white text-xs px-4 py-2 rounded-lg font-semibold transition-all hover:-translate-y-0.5 active:translate-y-0 shadow-lg shadow-indigo-600/30 hover:shadow-indigo-500/50"
             >

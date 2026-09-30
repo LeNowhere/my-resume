@@ -37,34 +37,34 @@ export default function AnimatedContent({
         <div className="lg:col-span-8 space-y-6">
           
           {/* Status Badge */}
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-medium">
-            <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-            Available for full-time & high-impact roles
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-indigo-300 text-xs font-semibold tracking-wide shadow-sm">
+            <span className="w-2.5 h-2.5 rounded-full bg-indigo-400"></span>
+            Fullstack Developer & Product Strategy Specialist
           </div>
 
-          {/* Headline */}
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight leading-tight">
-            Engineering Scalable Web Apps with <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 via-sky-400 to-emerald-400">Precision & Business Growth</span>
+          {/* High Impact Headline */}
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight leading-[1.15]">
+            Architecting <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 via-sky-400 to-emerald-400">High-Performance Systems</span> with Product-Minded Execution
           </h1>
 
           {/* Dynamic Bio Summary */}
-          <p className="text-slate-300 text-sm sm:text-base leading-relaxed max-w-2xl">
-            High-performing Fullstack Developer with 5+ years of experience engineering scalable web applications using React, TypeScript, Laravel, and Node.js. Proven expertise in optimizing API performance, automating QA pipelines, and leading product strategy in Agile environments.
+          <p className="text-slate-300 text-sm sm:text-base leading-relaxed max-w-2xl font-normal">
+            Senior Fullstack Developer with <strong className="text-white font-semibold">5+ years of engineering experience</strong> across fintech, media, and enterprise software ecosystems (ex-DANA & ex-RCTI+). Expert in end-to-end web architecture (React, Next.js, Laravel, Node.js), API performance optimization, QA automation, and technical delivery aligned with business objectives.
           </p>
 
-          {/* Key Value Metrics */}
+          {/* Value Highlights Grid */}
           <div className="grid grid-cols-3 gap-4 pt-4 border-t border-slate-800/80">
-            <div>
-              <p className="text-xl sm:text-2xl font-bold text-white font-mono">5+ Yrs</p>
-              <p className="text-[11px] text-slate-400 font-medium">Engineering Experience</p>
+            <div className="space-y-0.5">
+              <p className="text-2xl sm:text-3xl font-black text-white font-mono tracking-tight">5+ Yrs</p>
+              <p className="text-[11px] text-slate-400 font-medium">Software Engineering</p>
             </div>
-            <div>
-              <p className="text-xl sm:text-2xl font-bold text-white font-mono">99%+</p>
-              <p className="text-[11px] text-slate-400 font-medium">Release Stability (QA)</p>
+            <div className="space-y-0.5">
+              <p className="text-2xl sm:text-3xl font-black text-indigo-400 font-mono tracking-tight">Enterprise</p>
+              <p className="text-[11px] text-slate-400 font-medium">High-Availability APIs</p>
             </div>
-            <div>
-              <p className="text-xl sm:text-2xl font-bold text-white font-mono">3 Top</p>
-              <p className="text-[11px] text-slate-400 font-medium">Tech Ecosystems</p>
+            <div className="space-y-0.5">
+              <p className="text-2xl sm:text-3xl font-black text-emerald-400 font-mono tracking-tight">99%+</p>
+              <p className="text-[11px] text-slate-400 font-medium">Release Quality & SLA</p>
             </div>
           </div>
         </div>
@@ -74,7 +74,7 @@ export default function AnimatedContent({
           <motion.div 
             whileHover={{ scale: 1.03, rotate: 1 }}
             transition={{ type: 'spring', stiffness: 300 }}
-            className="w-60 h-60 sm:w-72 sm:h-72 rounded-2xl border-2 border-indigo-500/30 bg-slate-800 overflow-hidden shadow-2xl relative cursor-pointer group shadow-indigo-500/10"
+            className="w-60 h-60 sm:w-72 sm:h-72 rounded-2xl border-2 border-indigo-500/40 bg-slate-800 overflow-hidden shadow-2xl relative cursor-pointer group shadow-indigo-500/20"
           >
             <Image 
               src="/profile.jpg" 
@@ -89,7 +89,7 @@ export default function AnimatedContent({
         </div>
       </motion.section>
 
-      {/* Skills Section */}
+      {/* Key Skills & Tech Stack Section */}
       <motion.section 
         initial="hidden"
         whileInView="visible"
@@ -98,17 +98,19 @@ export default function AnimatedContent({
         id="skills" 
         className="space-y-4 scroll-mt-28"
       >
-        <h2 className="text-xs font-bold uppercase tracking-widest text-indigo-400">KEY SKILLS & COMPETENCIES</h2>
+        <div className="flex justify-between items-center">
+          <h2 className="text-xs font-bold uppercase tracking-widest text-indigo-400">CORE TECH STACK & COMPETENCIES</h2>
+        </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-6 gap-y-3 bg-slate-900/40 p-5 rounded-xl border border-slate-800/80 text-xs">
           {skills.map((skill, idx) => (
             <motion.div 
               key={idx}
               whileHover={{ x: 6, backgroundColor: 'rgba(30, 41, 59, 0.6)' }}
               transition={{ type: 'spring', stiffness: 400 }}
-              className="flex justify-between items-center py-2 px-3 rounded-lg border border-slate-800/40 bg-slate-950/30 transition-colors cursor-default"
+              className="flex justify-between items-center py-2 px-3 rounded-lg border border-slate-800/40 bg-slate-950/40 transition-colors cursor-default"
             >
-              <span className="text-slate-200 font-medium">{skill.name}</span>
-              {skill.level && <span className="text-indigo-400 font-mono text-[11px] bg-indigo-500/10 px-2 py-0.5 rounded">{skill.level}</span>}
+              <span className="text-slate-200 font-semibold">{skill.name}</span>
+              {skill.level && <span className="text-indigo-400 font-mono text-[11px] bg-indigo-500/10 px-2 py-0.5 rounded border border-indigo-500/20">{skill.level}</span>}
             </motion.div>
           ))}
         </div>
@@ -123,7 +125,7 @@ export default function AnimatedContent({
         id="experience" 
         className="space-y-6 pt-10 border-t border-slate-800/80 scroll-mt-28"
       >
-        <h2 className="text-xs font-bold uppercase tracking-widest text-indigo-400">WORK EXPERIENCE</h2>
+        <h2 className="text-xs font-bold uppercase tracking-widest text-indigo-400">CAREER TIMELINE</h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {/* Fullstack Developer */}
@@ -134,16 +136,16 @@ export default function AnimatedContent({
           >
             <div className="flex justify-between items-start gap-2">
               <div>
-                <span className="text-xs text-indigo-400 font-semibold">• FULLSTACK DEVELOPER</span>
+                <span className="text-[11px] text-indigo-400 font-bold uppercase tracking-wider">• Fullstack Developer</span>
                 <h3 className="text-sm font-bold text-white mt-0.5 group-hover:text-indigo-300 transition-colors">PT Super Andalas Steel</h3>
               </div>
-              <span className="text-[11px] font-mono text-slate-400 bg-slate-800/80 px-2 py-0.5 rounded shrink-0">
+              <span className="text-[11px] font-mono text-emerald-400 bg-emerald-500/10 border border-emerald-500/20 px-2 py-0.5 rounded shrink-0 font-medium">
                 Aug 2026 - Present
               </span>
             </div>
-            <ul className="text-xs text-slate-300 space-y-1.5 list-disc list-inside leading-relaxed">
-              <li>Architected scalable web platforms using React, TypeScript, Laravel, and Tailwind CSS.</li>
-              <li>Engineered RESTful APIs and database structures to streamline core business operations.</li>
+            <ul className="text-xs text-slate-300 space-y-2 list-disc list-inside leading-relaxed">
+              <li>Architecting scalable web platforms utilizing React, TypeScript, Laravel, and Tailwind CSS.</li>
+              <li>Engineering high-throughput RESTful APIs and database schemas to optimize core business operations.</li>
             </ul>
           </motion.div>
 
@@ -155,17 +157,17 @@ export default function AnimatedContent({
           >
             <div className="flex justify-between items-start gap-2">
               <div>
-                <span className="text-xs text-indigo-400 font-semibold">• PRODUCT OWNER</span>
+                <span className="text-[11px] text-indigo-400 font-bold uppercase tracking-wider">• Product Owner</span>
                 <h3 className="text-sm font-bold text-white mt-0.5 group-hover:text-indigo-300 transition-colors">RCTI+</h3>
               </div>
               <span className="text-[11px] font-mono text-slate-400 bg-slate-800/80 px-2 py-0.5 rounded shrink-0">
                 Oct 2024 - Mar 2026
               </span>
             </div>
-            <ul className="text-xs text-slate-300 space-y-1.5 list-disc list-inside leading-relaxed">
-              <li>Spearheaded end-to-end product roadmaps and backlog prioritization within fast-paced Agile/Scrum sprints.</li>
-              <li>Cross-functionally aligned engineering and design teams to launch high-impact features.</li>
-              <li>Leveraged analytics to optimize user engagement, feature performance, and product positioning.</li>
+            <ul className="text-xs text-slate-300 space-y-2 list-disc list-inside leading-relaxed">
+              <li>Spearheaded end-to-end product roadmaps and backlog prioritization in fast-paced Agile/Scrum environments.</li>
+              <li>Aligned cross-functional engineering and design teams to drive high-impact feature adoption.</li>
+              <li>Utilized product analytics to optimize user engagement and product positioning.</li>
             </ul>
           </motion.div>
 
@@ -177,17 +179,17 @@ export default function AnimatedContent({
           >
             <div className="flex justify-between items-start gap-2">
               <div>
-                <span className="text-xs text-indigo-400 font-semibold">• QUALITY ASSURANCE ENGINEER</span>
+                <span className="text-[11px] text-indigo-400 font-bold uppercase tracking-wider">• Quality Assurance Engineer</span>
                 <h3 className="text-sm font-bold text-white mt-0.5 group-hover:text-indigo-300 transition-colors">DANA Indonesia</h3>
               </div>
               <span className="text-[11px] font-mono text-slate-400 bg-slate-800/80 px-2 py-0.5 rounded shrink-0">
                 Jan 2024 - Aug 2024
               </span>
             </div>
-            <ul className="text-xs text-slate-300 space-y-1.5 list-disc list-inside leading-relaxed">
-              <li>Executed end-to-end testing across mobile platforms to guarantee 99%+ release stability.</li>
-              <li>Designed comprehensive automated test suites using Selenium to accelerate release cycles.</li>
-              <li>Partnered directly with developers to debug, isolate, and resolve high-priority defects.</li>
+            <ul className="text-xs text-slate-300 space-y-2 list-disc list-inside leading-relaxed">
+              <li>Executed comprehensive functional & regression testing across mobile platforms to maintain 99%+ stability.</li>
+              <li>Designed automated test suites using Selenium to significantly accelerate release deployment cycles.</li>
+              <li>Collaborated directly with engineering teams to debug, isolate, and eliminate critical software defects.</li>
             </ul>
           </motion.div>
 
@@ -199,17 +201,17 @@ export default function AnimatedContent({
           >
             <div className="flex justify-between items-start gap-2">
               <div>
-                <span className="text-xs text-indigo-400 font-semibold">• SOFTWARE DEVELOPER (WEB)</span>
+                <span className="text-[11px] text-indigo-400 font-bold uppercase tracking-wider">• Software Developer (Web)</span>
                 <h3 className="text-sm font-bold text-white mt-0.5 group-hover:text-indigo-300 transition-colors">DANA Indonesia</h3>
               </div>
               <span className="text-[11px] font-mono text-slate-400 bg-slate-800/80 px-2 py-0.5 rounded shrink-0">
                 Sep 2019 - Dec 2023
               </span>
             </div>
-            <ul className="text-xs text-slate-300 space-y-1.5 list-disc list-inside leading-relaxed">
-              <li>Engineered high-availability web features serving millions of users using React.js and Node.js.</li>
-              <li>Integrated complex REST APIs, driving faster load times and enhanced application responsiveness.</li>
-              <li>Collaborated in high-velocity Agile sprints to deliver clean, scalable codebases.</li>
+            <ul className="text-xs text-slate-300 space-y-2 list-disc list-inside leading-relaxed">
+              <li>Engineered high-availability web features serving large-scale platforms using React.js and Node.js.</li>
+              <li>Integrated complex RESTful APIs to reduce page load latency and boost user responsiveness.</li>
+              <li>Maintained clean, scalable, and fully tested codebases within high-velocity Agile development cycles.</li>
             </ul>
           </motion.div>
         </div>
@@ -230,7 +232,7 @@ export default function AnimatedContent({
         >
           <div>
             <p className="font-bold text-white text-sm">BACHELOR OF ENGINEERING IN INFORMATICS</p>
-            <p className="text-slate-400 mt-0.5">Del Institute of Technology • North Sumatra, Indonesia (GPA: 2.88)</p>
+            <p className="text-slate-400 mt-0.5">Del Institute of Technology • North Sumatra, Indonesia</p>
           </div>
           <span className="text-slate-500 font-mono">Sep 2015 - Sep 2019</span>
         </motion.div>
@@ -252,9 +254,9 @@ export default function AnimatedContent({
             whileTap={{ scale: 0.97 }}
             href="/cv-joshua.pdf" 
             download 
-            className="bg-indigo-600 hover:bg-indigo-500 text-white text-xs px-4 py-2 rounded-md font-semibold transition shadow-lg shadow-indigo-500/20"
+            className="bg-indigo-600 hover:bg-indigo-500 text-white text-xs px-4 py-2.5 rounded-lg font-semibold transition shadow-lg shadow-indigo-500/20 flex items-center gap-2"
           >
-            DOWNLOAD FULL CV (PDF)
+            <span>DOWNLOAD FULL CV (.PDF)</span>
           </motion.a>
         </div>
 
