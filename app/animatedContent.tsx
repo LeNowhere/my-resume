@@ -116,7 +116,7 @@ export default function AnimatedContent({
         </div>
       </motion.section>
 
-      {/* Experience Section */}
+      {/* Experience Section - High Impact Career Timeline */}
       <motion.section 
         initial="hidden"
         whileInView="visible"
@@ -125,94 +125,140 @@ export default function AnimatedContent({
         id="experience" 
         className="space-y-6 pt-10 border-t border-slate-800/80 scroll-mt-28"
       >
-        <h2 className="text-xs font-bold uppercase tracking-widest text-indigo-400">CAREER TIMELINE</h2>
+        <div className="flex justify-between items-end">
+          <div>
+            <h2 className="text-xs font-bold uppercase tracking-widest text-indigo-400">CAREER TIMELINE</h2>
+            <p className="text-xs text-slate-400 mt-1">Proven track record in fullstack development, QA automation, and product strategy.</p>
+          </div>
+        </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {/* Fullstack Developer */}
+          {/* PT Super Andalas Steel */}
           <motion.div 
             whileHover={{ y: -6, borderColor: 'rgba(99, 102, 241, 0.6)' }}
             transition={{ type: 'spring', stiffness: 300 }}
-            className="bg-slate-900/40 border border-slate-800/80 p-5 rounded-xl space-y-3 transition-colors shadow-lg group cursor-pointer"
+            className="bg-slate-900/50 border border-slate-800/80 p-6 rounded-xl space-y-4 transition-all shadow-xl hover:shadow-indigo-500/10 flex flex-col justify-between group cursor-pointer"
           >
-            <div className="flex justify-between items-start gap-2">
-              <div>
-                <span className="text-[11px] text-indigo-400 font-bold uppercase tracking-wider">• Fullstack Developer</span>
-                <h3 className="text-sm font-bold text-white mt-0.5 group-hover:text-indigo-300 transition-colors">PT Super Andalas Steel</h3>
+            <div className="space-y-3">
+              <div className="flex justify-between items-start gap-2">
+                <div>
+                  <span className="text-[11px] text-indigo-400 font-bold uppercase tracking-wider">Fullstack Developer</span>
+                  <h3 className="text-base font-bold text-white mt-0.5 group-hover:text-indigo-300 transition-colors">PT Super Andalas Steel</h3>
+                </div>
+                <span className="text-[11px] font-mono text-emerald-400 bg-emerald-500/10 border border-emerald-500/20 px-2.5 py-1 rounded-full shrink-0 font-medium">
+                  Aug 2026 - Present
+                </span>
               </div>
-              <span className="text-[11px] font-mono text-emerald-400 bg-emerald-500/10 border border-emerald-500/20 px-2 py-0.5 rounded shrink-0 font-medium">
-                Aug 2026 - Present
-              </span>
+
+              <ul className="text-xs text-slate-300 space-y-2 list-disc list-inside leading-relaxed">
+                <li>Architecting scalable web platforms utilizing React, TypeScript, Laravel, and Tailwind CSS.</li>
+                <li>Engineering high-throughput RESTful APIs and database schemas to optimize core business operations.</li>
+              </ul>
             </div>
-            <ul className="text-xs text-slate-300 space-y-2 list-disc list-inside leading-relaxed">
-              <li>Architecting scalable web platforms utilizing React, TypeScript, Laravel, and Tailwind CSS.</li>
-              <li>Engineering high-throughput RESTful APIs and database schemas to optimize core business operations.</li>
-            </ul>
+
+            <div className="flex flex-wrap gap-1.5 pt-3 border-t border-slate-800/60">
+              <span className="text-[10px] font-mono bg-slate-800/80 text-slate-300 px-2 py-0.5 rounded border border-slate-700/50">React</span>
+              <span className="text-[10px] font-mono bg-slate-800/80 text-slate-300 px-2 py-0.5 rounded border border-slate-700/50">TypeScript</span>
+              <span className="text-[10px] font-mono bg-slate-800/80 text-slate-300 px-2 py-0.5 rounded border border-slate-700/50">Laravel</span>
+              <span className="text-[10px] font-mono bg-slate-800/80 text-slate-300 px-2 py-0.5 rounded border border-slate-700/50">Tailwind CSS</span>
+              <span className="text-[10px] font-mono bg-slate-800/80 text-slate-300 px-2 py-0.5 rounded border border-slate-700/50">REST API</span>
+            </div>
           </motion.div>
 
-          {/* Product Owner */}
+          {/* RCTI+ */}
           <motion.div 
             whileHover={{ y: -6, borderColor: 'rgba(99, 102, 241, 0.6)' }}
             transition={{ type: 'spring', stiffness: 300 }}
-            className="bg-slate-900/40 border border-slate-800/80 p-5 rounded-xl space-y-3 transition-colors shadow-lg group cursor-pointer"
+            className="bg-slate-900/50 border border-slate-800/80 p-6 rounded-xl space-y-4 transition-all shadow-xl hover:shadow-indigo-500/10 flex flex-col justify-between group cursor-pointer"
           >
-            <div className="flex justify-between items-start gap-2">
-              <div>
-                <span className="text-[11px] text-indigo-400 font-bold uppercase tracking-wider">• Product Owner</span>
-                <h3 className="text-sm font-bold text-white mt-0.5 group-hover:text-indigo-300 transition-colors">RCTI+</h3>
+            <div className="space-y-3">
+              <div className="flex justify-between items-start gap-2">
+                <div>
+                  <span className="text-[11px] text-indigo-400 font-bold uppercase tracking-wider">Product Owner</span>
+                  <h3 className="text-base font-bold text-white mt-0.5 group-hover:text-indigo-300 transition-colors">RCTI+</h3>
+                </div>
+                <span className="text-[11px] font-mono text-slate-400 bg-slate-800/80 px-2.5 py-1 rounded-full shrink-0">
+                  Oct 2024 - Mar 2026
+                </span>
               </div>
-              <span className="text-[11px] font-mono text-slate-400 bg-slate-800/80 px-2 py-0.5 rounded shrink-0">
-                Oct 2024 - Mar 2026
-              </span>
+
+              <ul className="text-xs text-slate-300 space-y-2 list-disc list-inside leading-relaxed">
+                <li>Spearheaded end-to-end product roadmaps and backlog prioritization in fast-paced Agile/Scrum sprints.</li>
+                <li>Cross-functionally aligned engineering and design teams to launch high-impact features and boost adoption.</li>
+                <li>Utilized product analytics to optimize user engagement and strategic feature positioning.</li>
+              </ul>
             </div>
-            <ul className="text-xs text-slate-300 space-y-2 list-disc list-inside leading-relaxed">
-              <li>Spearheaded end-to-end product roadmaps and backlog prioritization in fast-paced Agile/Scrum environments.</li>
-              <li>Aligned cross-functional engineering and design teams to drive high-impact feature adoption.</li>
-              <li>Utilized product analytics to optimize user engagement and product positioning.</li>
-            </ul>
+
+            <div className="flex flex-wrap gap-1.5 pt-3 border-t border-slate-800/60">
+              <span className="text-[10px] font-mono bg-slate-800/80 text-slate-300 px-2 py-0.5 rounded border border-slate-700/50">Product Strategy</span>
+              <span className="text-[10px] font-mono bg-slate-800/80 text-slate-300 px-2 py-0.5 rounded border border-slate-700/50">Agile/Scrum</span>
+              <span className="text-[10px] font-mono bg-slate-800/80 text-slate-300 px-2 py-0.5 rounded border border-slate-700/50">Feature Adoption</span>
+              <span className="text-[10px] font-mono bg-slate-800/80 text-slate-300 px-2 py-0.5 rounded border border-slate-700/50">Analytics</span>
+            </div>
           </motion.div>
 
-          {/* Quality Assurance Engineer */}
+          {/* DANA - QA */}
           <motion.div 
             whileHover={{ y: -6, borderColor: 'rgba(99, 102, 241, 0.6)' }}
             transition={{ type: 'spring', stiffness: 300 }}
-            className="bg-slate-900/40 border border-slate-800/80 p-5 rounded-xl space-y-3 transition-colors shadow-lg group cursor-pointer"
+            className="bg-slate-900/50 border border-slate-800/80 p-6 rounded-xl space-y-4 transition-all shadow-xl hover:shadow-indigo-500/10 flex flex-col justify-between group cursor-pointer"
           >
-            <div className="flex justify-between items-start gap-2">
-              <div>
-                <span className="text-[11px] text-indigo-400 font-bold uppercase tracking-wider">• Quality Assurance Engineer</span>
-                <h3 className="text-sm font-bold text-white mt-0.5 group-hover:text-indigo-300 transition-colors">DANA Indonesia</h3>
+            <div className="space-y-3">
+              <div className="flex justify-between items-start gap-2">
+                <div>
+                  <span className="text-[11px] text-indigo-400 font-bold uppercase tracking-wider">Quality Assurance Engineer</span>
+                  <h3 className="text-base font-bold text-white mt-0.5 group-hover:text-indigo-300 transition-colors">DANA Indonesia</h3>
+                </div>
+                <span className="text-[11px] font-mono text-slate-400 bg-slate-800/80 px-2.5 py-1 rounded-full shrink-0">
+                  Jan 2024 - Aug 2024
+                </span>
               </div>
-              <span className="text-[11px] font-mono text-slate-400 bg-slate-800/80 px-2 py-0.5 rounded shrink-0">
-                Jan 2024 - Aug 2024
-              </span>
+
+              <ul className="text-xs text-slate-300 space-y-2 list-disc list-inside leading-relaxed">
+                <li>Executed comprehensive functional & regression testing across mobile platforms to maintain 99%+ stability.</li>
+                <li>Designed automated test suites using Selenium to significantly accelerate release deployment cycles.</li>
+                <li>Collaborated directly with engineering teams to debug, isolate, and eliminate critical software defects.</li>
+              </ul>
             </div>
-            <ul className="text-xs text-slate-300 space-y-2 list-disc list-inside leading-relaxed">
-              <li>Executed comprehensive functional & regression testing across mobile platforms to maintain 99%+ stability.</li>
-              <li>Designed automated test suites using Selenium to significantly accelerate release deployment cycles.</li>
-              <li>Collaborated directly with engineering teams to debug, isolate, and eliminate critical software defects.</li>
-            </ul>
+
+            <div className="flex flex-wrap gap-1.5 pt-3 border-t border-slate-800/60">
+              <span className="text-[10px] font-mono bg-slate-800/80 text-slate-300 px-2 py-0.5 rounded border border-slate-700/50">Selenium</span>
+              <span className="text-[10px] font-mono bg-slate-800/80 text-slate-300 px-2 py-0.5 rounded border border-slate-700/50">Automated Testing</span>
+              <span className="text-[10px] font-mono bg-slate-800/80 text-slate-300 px-2 py-0.5 rounded border border-slate-700/50">Regression QA</span>
+              <span className="text-[10px] font-mono bg-slate-800/80 text-slate-300 px-2 py-0.5 rounded border border-slate-700/50">Mobile Stability</span>
+            </div>
           </motion.div>
 
-          {/* Software Developer (Web) */}
+          {/* DANA - Web Dev */}
           <motion.div 
             whileHover={{ y: -6, borderColor: 'rgba(99, 102, 241, 0.6)' }}
             transition={{ type: 'spring', stiffness: 300 }}
-            className="bg-slate-900/40 border border-slate-800/80 p-5 rounded-xl space-y-3 transition-colors shadow-lg group cursor-pointer"
+            className="bg-slate-900/50 border border-slate-800/80 p-6 rounded-xl space-y-4 transition-all shadow-xl hover:shadow-indigo-500/10 flex flex-col justify-between group cursor-pointer"
           >
-            <div className="flex justify-between items-start gap-2">
-              <div>
-                <span className="text-[11px] text-indigo-400 font-bold uppercase tracking-wider">• Software Developer (Web)</span>
-                <h3 className="text-sm font-bold text-white mt-0.5 group-hover:text-indigo-300 transition-colors">DANA Indonesia</h3>
+            <div className="space-y-3">
+              <div className="flex justify-between items-start gap-2">
+                <div>
+                  <span className="text-[11px] text-indigo-400 font-bold uppercase tracking-wider">Software Developer (Web)</span>
+                  <h3 className="text-base font-bold text-white mt-0.5 group-hover:text-indigo-300 transition-colors">DANA Indonesia</h3>
+                </div>
+                <span className="text-[11px] font-mono text-slate-400 bg-slate-800/80 px-2.5 py-1 rounded-full shrink-0">
+                  Sep 2019 - Dec 2023
+                </span>
               </div>
-              <span className="text-[11px] font-mono text-slate-400 bg-slate-800/80 px-2 py-0.5 rounded shrink-0">
-                Sep 2019 - Dec 2023
-              </span>
+
+              <ul className="text-xs text-slate-300 space-y-2 list-disc list-inside leading-relaxed">
+                <li>Engineered high-availability web features serving large-scale fintech platforms using React.js and Node.js.</li>
+                <li>Integrated complex RESTful APIs to reduce page load latency and boost client responsiveness.</li>
+                <li>Maintained clean, scalable, and fully tested codebases within high-velocity Agile development cycles.</li>
+              </ul>
             </div>
-            <ul className="text-xs text-slate-300 space-y-2 list-disc list-inside leading-relaxed">
-              <li>Engineered high-availability web features serving large-scale platforms using React.js and Node.js.</li>
-              <li>Integrated complex RESTful APIs to reduce page load latency and boost user responsiveness.</li>
-              <li>Maintained clean, scalable, and fully tested codebases within high-velocity Agile development cycles.</li>
-            </ul>
+
+            <div className="flex flex-wrap gap-1.5 pt-3 border-t border-slate-800/60">
+              <span className="text-[10px] font-mono bg-slate-800/80 text-slate-300 px-2 py-0.5 rounded border border-slate-700/50">React.js</span>
+              <span className="text-[10px] font-mono bg-slate-800/80 text-slate-300 px-2 py-0.5 rounded border border-slate-700/50">Node.js</span>
+              <span className="text-[10px] font-mono bg-slate-800/80 text-slate-300 px-2 py-0.5 rounded border border-slate-700/50">RESTful APIs</span>
+              <span className="text-[10px] font-mono bg-slate-800/80 text-slate-300 px-2 py-0.5 rounded border border-slate-700/50">Agile Sprints</span>
+            </div>
           </motion.div>
         </div>
       </motion.section>
